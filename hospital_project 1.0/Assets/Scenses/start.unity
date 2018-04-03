@@ -198,8 +198,9 @@ GameObject:
   - component: {fileID: 179483617}
   - component: {fileID: 179483616}
   - component: {fileID: 179483615}
+  - component: {fileID: 179483618}
   m_Layer: 5
-  m_Name: MUSIC
+  m_Name: MUSIC_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,7 +263,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 179483616}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 179483618}
+        m_MethodName: MUSIC_B_click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &179483616
@@ -298,6 +310,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 179483613}
+--- !u!114 &179483618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 179483613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b02bdb489fe9b349833916e76429743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  START_B: {fileID: 0}
+  DOCTOR_B: {fileID: 0}
+  HISTORY_B: {fileID: 0}
+  LEFT_B: {fileID: 0}
+  MUSIC_B: {fileID: 179483613}
 --- !u!1 &257050799
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,8 +337,9 @@ GameObject:
   - component: {fileID: 257050803}
   - component: {fileID: 257050802}
   - component: {fileID: 257050801}
+  - component: {fileID: 257050804}
   m_Layer: 5
-  m_Name: HISTORY
+  m_Name: HISTORY_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -373,7 +402,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 257050802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 257050804}
+        m_MethodName: HISTORY_B_click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &257050802
@@ -409,6 +449,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 257050799}
+--- !u!114 &257050804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 257050799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b02bdb489fe9b349833916e76429743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  START_B: {fileID: 0}
+  DOCTOR_B: {fileID: 0}
+  HISTORY_B: {fileID: 257050799}
+  LEFT_B: {fileID: 0}
+  MUSIC_B: {fileID: 0}
 --- !u!1 &379043741
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,8 +730,9 @@ GameObject:
   - component: {fileID: 866636704}
   - component: {fileID: 866636703}
   - component: {fileID: 866636702}
+  - component: {fileID: 866636705}
   m_Layer: 5
-  m_Name: LEFT
+  m_Name: LEFT_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -738,7 +795,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 866636703}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 866636705}
+        m_MethodName: LEFT_B_click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &866636703
@@ -774,6 +842,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 866636700}
+--- !u!114 &866636705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 866636700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b02bdb489fe9b349833916e76429743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  START_B: {fileID: 0}
+  DOCTOR_B: {fileID: 0}
+  HISTORY_B: {fileID: 0}
+  LEFT_B: {fileID: 866636700}
+  MUSIC_B: {fileID: 0}
 --- !u!1 &882014741
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +931,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &882014745
 RectTransform:
@@ -1396,8 +1480,9 @@ GameObject:
   - component: {fileID: 2072380591}
   - component: {fileID: 2072380590}
   - component: {fileID: 2072380589}
+  - component: {fileID: 2072380592}
   m_Layer: 5
-  m_Name: START
+  m_Name: START_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1460,7 +1545,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2072380590}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2072380592}
+        m_MethodName: START_B_click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2072380590
@@ -1496,6 +1592,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2072380587}
+--- !u!114 &2072380592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2072380587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b02bdb489fe9b349833916e76429743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  START_B: {fileID: 2072380587}
+  DOCTOR_B: {fileID: 0}
+  HISTORY_B: {fileID: 0}
+  LEFT_B: {fileID: 0}
+  MUSIC_B: {fileID: 0}
 --- !u!1 &2141927989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,8 +1619,9 @@ GameObject:
   - component: {fileID: 2141927993}
   - component: {fileID: 2141927992}
   - component: {fileID: 2141927991}
+  - component: {fileID: 2141927994}
   m_Layer: 5
-  m_Name: DOCTOR
+  m_Name: DOCTOR_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1571,7 +1684,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2141927992}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2141927994}
+        m_MethodName: DOCTOR_B_click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2141927992
@@ -1607,3 +1731,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2141927989}
+--- !u!114 &2141927994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2141927989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b02bdb489fe9b349833916e76429743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  START_B: {fileID: 0}
+  DOCTOR_B: {fileID: 2141927989}
+  HISTORY_B: {fileID: 0}
+  LEFT_B: {fileID: 0}
+  MUSIC_B: {fileID: 0}
