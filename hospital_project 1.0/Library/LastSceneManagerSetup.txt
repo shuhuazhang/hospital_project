@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenses/SECOND.unity
+- path: Assets/Scenses/DOCTOR.unity
   isLoaded: 1
   isActive: 1
